@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+    <TITLE>Nombre de mes</TITLE>
+<BODY bgcolor="#00FDF9">
+    <CENTER>
+        <h2> PAGINA CON CALENDARIO QUE DA LA FECHA ESCRITA EN LETRA </h2>
+        <script language="JavaScript">
+            var hoy = new Date();
+            diaNombre = hoy.getDay();
+            dia = hoy.getDate();
+            mes = hoy.getMonth();
+            ano = hoy.getYear() + 1900;
+
+            if (mes == "0") nombremes = "<font color=#4100FD size 5> ENERO </font>";
+            else if (mes == "1") nombremes = "<font color=#4100FD size 5> FEBRERO </font>";
+            else if (mes == "2") nombremes = "<font color=#4100FD SIZE=5> MARZO </font>";
+            else if (mes == "3") nombremes = "<font color=#4100FD SIZE=5> ABRIL </font>";
+            else if (mes == "4") nombremes = "<font color=#4100FD SIZE=5> MAYO </font>";
+            else if (mes == "5") nombremes = "<font color=#4100FD SIZE=5> JUNIO </font>";
+            else if (mes == "6") nombremes = "<font color=#4100FD SIZE=5> JULIO </font>";
+            else if (mes == "7") nombremes = "<font color=#4100FD SIZE=5> AGOSTO</font>";
+            else if (mes == "8") nombremes = "<font color=#4100FD SIZE=5> SEPTIEMBRE </font>";
+            else if (mes == "9") nombremes = "<font color=#4100FD SIZE=5> OCTUBRE </font>";
+            else if (mes == "10") nombremes = "<font color=#4100FD SIZE=5> NOVIEMBRE </font>";
+            else nombremes = "<font color=#4100FD SIZE=5> DICIEMBRE </font>";
+
+            if(diaNombre == "0") diaNombre="<font color=#4100FD size 5> DOMINGO </font>";
+            else if (diaNombre == "1") diaNombre="<font color=#4100FD size 5> LUNES </font>";
+            else if (diaNombre == "2") diaNombre="<font color=#4100FD size 5> MARTES </font>";
+            else if (diaNombre == "3") diaNombre="<font color=#4100FD size 5> MIERCOLES </font>";
+            else if (diaNombre == "4") diaNombre="<font color=#4100FD size 5> JUEVES </font>";
+            else if (diaNombre == "5") diaNombre="<font color=#4100FD size 5> VIERNES </font>";
+            else diaNombre = "<font color=#4100FD size 5> SABADO </font>"; 
+
+            document.write("HOY ES"+ diaNombre +" ")
+            document.write(dia);
+            document.write(" DE ");
+            document.write(nombremes);
+            document.write(" DEL AÑO ");
+            document.write(ano);
+        </script>
+</BODY>
+</HTML>
